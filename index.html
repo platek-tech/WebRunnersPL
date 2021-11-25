@@ -217,14 +217,14 @@
                         <!-- Name input -->
                         <div class="mb-3" data-aos="fade-left">
                             <label class="form-label" for="name">Imię i nazwisko</label>
-                            <input class="form-control" id="name" type="text" placeholder="Imię i nazwisko" data-sb-validations="required" />
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Imię i nazwisko" data-sb-validations="required" />
                             <div class="invalid-feedback" data-sb-feedback="name:required">To pole jest wymagane!</div>
                         </div>
 
                         <!-- Email address input -->
                         <div class="mb-3" data-aos="fade-right">
                             <label class="form-label" for="email">Email</label>
-                            <input class="form-control" id="email" type="email" placeholder="Email " data-sb-validations="required, email" />
+                            <input class="form-control" id="email" name="email"  type="email" placeholder="Email " data-sb-validations="required, email" />
                             <div class="invalid-feedback" data-sb-feedback="emailAddress:required">To pole jest wymagane!</div>
                             <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email jest niepoprawny.</div>
                         </div>
@@ -232,7 +232,7 @@
                         <!-- Message input -->
                         <div class="mb-3" data-aos="fade-left">
                             <label class="form-label" for="comment">Wiadomość</label>
-                            <textarea class="form-control" id="comment" type="text" placeholder="Treść wiadomości" style="height: 10rem;" data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="comment" name="comment" type="text" placeholder="Treść wiadomości" style="height: 10rem;" data-sb-validations="required"></textarea>
                             <div class="invalid-feedback" data-sb-feedback="comment:required">To pole jest wymagane!</div>
                         </div>
                         <input name="_formsubmit_id" type="text" style="display:none">
@@ -248,7 +248,7 @@
 
                         <!-- Form submit button -->
                         <div class="d-grid" data-aos="fade-right">
-                            <button class="btn btn-primary btn-lg " id="submitButton" type="submit">Wyślij</button>
+                            <button class="btn btn-primary btn-lg " id="submitButton" type="submit" value="Submit" >Wyślij</button>
                         </div>
 
                     </form>
